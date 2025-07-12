@@ -1,6 +1,7 @@
 import React from "react";
 
-const Card = () => {
+const Card = (props) => {
+  console.log("props", props);
   return (
     <>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">

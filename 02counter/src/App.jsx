@@ -14,6 +14,12 @@ function App() {
     }
     counter = counter + 1;
     setCounter(counter);
+    //previous state is passed as an argument to the function
+    setCounter((previousCounter) => {
+      return previousCounter + 1;
+    });
+    //can also use above syntax
+    setCounter((perviousCounter) => previousCounter + 1);
   };
 
   const removeValue = () => {
